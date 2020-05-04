@@ -1,3 +1,4 @@
+
 $(function(){
 
 
@@ -13,3 +14,5 @@ let progress = document.getElementById('progressbar'),
         let progressHight = (window.pageYOffset / totalHeight) * 100;
         progress.style.height = progressHight + '%';
     });
+
+    new WOW().init();
