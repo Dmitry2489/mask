@@ -1,0 +1,137 @@
+@import "vars";
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: $fonts-title;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+// Section padding
+.course-info,
+.course-after,
+.lesson-free,
+.course-program,
+.course-price,
+.course-gaid,
+.course-format {
+    padding: 80px 0;
+}
+
+// button
+.btns {
+    background-color: $color-main;
+    color: #fff;
+    border-radius: 30px;
+    text-transform: uppercase;
+    padding: 15px;
+    font-size: 16px;
+}
+
+// Creative Scroll Progress Bar
+::-webkit-scrollbar {
+    width: 0;
+}
+
+#scrollPath {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+#progressbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    animation: animateScroll 5s linear infinite;
+}
+
+@keyframes animateScroll {
+
+    0%,
+    100% {
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+#progressbar::before {
+    content: '';
+    position: absolute;
+    ;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(10px)
+}
+
+#progressbar::after {
+    content: '';
+    position: absolute;
+    ;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(30px)
+}
+
+// end animation
+
+.section-title {
+    font-size: 42px;
+    line-height: 1.23;
+    text-align: center;
+    margin-bottom: 40px;
+
+    span {
+        color: rgb(162, 57, 185);
+    }
+}

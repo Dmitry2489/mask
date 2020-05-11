@@ -1,0 +1,111 @@
+@media screen and (max-width:1220px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .header .header__title {
+        font-size: 31px;
+    }
+
+    .header .header__wrapper-img img {
+        width: 97px;
+        height: 115px;
+    }
+
+    .section-title {
+        font-size: 40px;
+    }
+
+    .course-info__card-title {
+        font-size: 20px;
+    }
+
+    .course-info__card-text {
+        font-size: 14px;
+    }
+
+    .course-price .course-price__item {
+        width: 40%;
+    }
+
+    .course-program__wrapper {
+        width: 86%;
+    }
+
+    .course-info__card {
+        width: 35%;
+    }
+
+    .course-after__wrapper {
+        width: 80%;
+    }
+
+
+}
+
+@media screen and (max-width:790px) {
+    .header .header__title {
+        font-size: 27px;
+    }
+
+    .course-info,
+    .course-after,
+    .lesson-free,
+    .course-program,
+    .course-price,
+    .course-gaid,
+    .course-format {
+        padding: 40px 0;
+    }
+
+    .course-price .course-price__item {
+        width: 86%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .course-author__block {
+        flex-direction: column;
+    }
+
+    .course-author_info {
+        width: 100%;
+    }
+
+    .course-author_img {
+        height: 400px;
+        width: 100%;
+        order: 1 !important;
+    }
+    .course-info__card {
+        width: 100%;
+    }
+}
+@media screen and (max-width:600px) {
+    .dowland__wrapper-btns a+a {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .course-info__card {
+        width: 100%;
+    }
+    .course-price .course-price__item {
+        padding: 20px 20px;
+        
+    }
+    .course-price .course-price_item-text{
+        font-size: 14px;
+    }
+    .dowland__title {
+        font-size: 33px;
+        padding-bottom: 0px;
+    }
+    .course-program__box p {
+        font-size: 14px;
+    }
+    .course-program__wrapper {
+        width: 95%;
+    }
+}
