@@ -79,33 +79,56 @@
         width: 100%;
         order: 1 !important;
     }
+
     .course-info__card {
         width: 100%;
     }
 }
+
 @media screen and (max-width:600px) {
     .dowland__wrapper-btns a+a {
         margin-left: 0px;
         margin-top: 20px;
     }
+
     .course-info__card {
         width: 100%;
     }
+
     .course-price .course-price__item {
         padding: 20px 20px;
-        
+
     }
-    .course-price .course-price_item-text{
+
+    .course-price .course-price_item-text {
         font-size: 14px;
     }
+
     .dowland__title {
         font-size: 33px;
         padding-bottom: 0px;
     }
+
     .course-program__box p {
         font-size: 14px;
     }
+
     .course-program__wrapper {
         width: 95%;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .section-title {
+        font-size: 25px;
+    }
+
+    .course-price__text {
+        font-size: 13px;
+    }
+
+    .box__number-wrapper {
+        padding: 12px 14px;
+        margin-right: 15px;
     }
 }
