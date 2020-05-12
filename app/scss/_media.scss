@@ -42,7 +42,16 @@
         width: 80%;
     }
 
-
+    .course-gaid__wrapper{
+        flex-direction: column;
+    }
+    .course-gaid__text {
+        font-size: 20x;
+        width: 100%;
+    }
+    .course-gaid__btn {
+        margin-top: 10px;
+    }
 }
 
 @media screen and (max-width:790px) {

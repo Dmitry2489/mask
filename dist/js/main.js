@@ -1,5 +1,3 @@
-
-
 let progress = document.getElementById("progressbar"),
     totalHeight = document.body.scrollHeight - window.innerHeight;
 
@@ -48,12 +46,13 @@ popUp.classList.add("animated", "fadeIn");
 popUp.addEventListener("click", (e) => {
     if (e.target == popUp) {
         popUp.style.display = "none";
+        document.body.style.overflow = "";
     }
 });
 
 btn.forEach((item) => {
-    
     item.addEventListener("click", () => {
         popUp.style.display = "flex";
+        document.body.style.overflow = "hidden";
     });
 });
